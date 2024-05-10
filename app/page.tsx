@@ -1,4 +1,5 @@
 import Container from "@/components/Container";
+import ProductList from "@/components/ProductList";
 import { Button } from "@/components/ui/button";
 import { ShoppingBag } from "lucide-react";
 
@@ -80,6 +81,9 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="flex flex-col gap-y-8 px-4 sm:px-6 lg:px-8">
+          <ProductList items={products} />
         </div>
       </div>
     </Container>
